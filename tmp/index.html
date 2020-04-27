@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plane webapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2 left-container">
+                <div class="row radar-settings">
+                    <h5>AIRPORT TYPE</h5>
+                    <span>
+                        <input type="checkbox" name="AIRPORTS" id="airports">
+                        <label for="airports">AIRPORTS</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="PRVT AIRPORTS" id="private-airports">
+                        <label for="private-airports">PRVT AIRPORTS</label>
+                    </span>
+                    <h5>AIRPACE TYPE</h5>
+                    <span>
+                        <input type="checkbox" name="CLASS D" id="class-d">
+                        <label for="class-d">CLASS D</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="CLASS E" id="class-e">
+                        <label for="class-e">CLASS E</label>
+                    </span>
+                </div>
+                <div class="row active-flights">
+                    <h5>Active flights</h5>
+                    <div class="list-group" id="flight-selector">
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 nomarg">
+                <div class="center" id="mapid"></div>
+            </div>
+            <div class="col-2 right-container">
+                <div class="row controls">
+                    <span class="simulation-controls">
+                            <button class="btn" onclick="location.reload()">RESTART</button>
+                        <button class="btn" id="pause-simulation">PAUSE</button>
+                        <button class="btn" id="play-simulation">RUN</button>
+                    </span>
+                    <span class="simulation-time">
+                    <input value="16" type="range" id="simulation-speed" name="simulation-speed"
+                        min="16" max="160">
+                    <label for="simulation-speed">Simulation Speed (100%-10%)</label>
+                        <p>TIME</p><p class="simulation-clock" id="clock">0:00</p>
+                    </span>
+                    <div class="flight-actions">
+                        <button type="button" class="btn" id="button-emergency-landing">Emergency landing</button>
+                        <button type="button" class="btn" id="button-hold">Hold pattern</button>
+                        <button type="button" class="btn" id="button-takeoff">Take off</button>
+                    </div>
+                </div>
+                <div class="flight-info">
+                    <span class="callsign-info">
+                        <p>Callsign Type</p>
+                        <p>FixPair</p>
+                    </span>
+                    <div class="selected-info">
+                        <p>Altitude:</p>
+                        <p id="big-altitude"></p>
+                        <p>Bearing:</p>
+                        <p id="big-bearing"></p>
+                        <p>Speed:</p>
+                        <p id="big-speed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="console-container center">
+                <button type="button" class="btn" id="console-enter">INPUT</button>
+                <input class="console" type="text" name="" id="console-input">
+                <button type="button" class="btn" id="button-start">KEYBOARD</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script src="./lib/leaflet.rotatedMarker.js"></script>
+    <!-- <script src="lib/index.js"></script> -->
+    <script type="module" src="./Flight.js" ></script>
+    <script type="module" src="./FlightManager.js" ></script>
+    <script type="module" src="./FlightController.js" ></script>
+    <script type="module" src="main.js"></script>
+</html>
