@@ -19,7 +19,7 @@
   height: 100%;
 } */
 
-
+/* Border around the radar */
 #mapid {
     width: 1800;
     height: 640px;
@@ -31,7 +31,7 @@
 .container {
     max-width: 1280px;
 }
-
+/* Background color */
 body {
     background-color: black;
     color: #fff;
@@ -59,6 +59,7 @@ body {
     padding: 0;
 }
 
+/* Container for keyboard area */
 .console-container {
     width: 100%;
     background-color: #fff;
@@ -252,6 +253,7 @@ span > p {
     margin: 6px;
 }
 
+/* Border around airport type */
 .airport-filters-container {
     background-color: #2C2C2C;
     border: 3px solid white;
@@ -264,7 +266,6 @@ span > p {
     display: block
 }
 
-/* TODO: Git gud */
 .selected-info span {
     display: block;
     width: 100%;
@@ -355,7 +356,6 @@ span > p {
     color: white;
     box-shadow: none;
     margin-left: 64px;
-
 }
 
 .leaflet-tooltip-top::before {

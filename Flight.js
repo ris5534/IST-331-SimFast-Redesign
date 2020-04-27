@@ -1,7 +1,7 @@
 'use strict';
 
-const TICK_TRAVEL = 0.01; // Normalized displacement vector multiplie
-const GPS_ERROR_MARGIN = 50; // Margin of error for landing detectio
+const TICK_TRAVEL = 0.01; // Normalized displacement vector multiple
+const GPS_ERROR_MARGIN = 50; // Margin of error for landing detection
 
 export default class Flight {
     constructor(origin, destination) {
