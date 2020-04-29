@@ -4,12 +4,13 @@
 
 .btn {
     /* display: block; */
-    margin: 8px;
+    margin: 8px 10px 8px 12px;
     width: 120px;
 }
 
 .btn:hover {
     color: #a1a1a1;
+
 }
 
 /* .pane {
