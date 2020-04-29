@@ -4,7 +4,7 @@
 
 .btn {
     /* display: block; */
-    margin: 8px 10px 8px 12px;
+    margin: 8px 10px 8px 11px;
     width: 120px;
 }
 
@@ -23,8 +23,8 @@
 /* Border around the radar */
 #mapid {
     width: 1800;
-    height: 640px;
-    border: 1px solid white;
+    height: 700px;
+    border: 2px solid white;
     margin: 0;
     padding: 0 4px 0;
 }
