@@ -31,7 +31,6 @@
 .container {
     max-width: 1280px;
 }
-
 /* Background color */
 body {
     background-color: #2C2C2C;
@@ -43,7 +42,7 @@ body {
 }
 
 .nomarg {
-    margin: 0px;
+    margin: 0;
 }
 
 .radar-settings {
@@ -154,7 +153,6 @@ span > p {
     background-color: #c1c1c1;
 }
 
-/* Active flights box */
 .list-group-item {
     background-color: #fff;
     border-radius: 0;
@@ -186,13 +184,13 @@ span > p {
 
 .list-group-item.active {
     background-color: #777;
-    border-radius: 0;
+    /* border-radius: 0;
     padding: 10px;
     background-color: #333;
     color: #fff;
     border: 1px solid #fff;
     overflow-x: hidden;
-    width: 100%;
+    width: 100%; */
 }
 
 .list-group-item:focus {
