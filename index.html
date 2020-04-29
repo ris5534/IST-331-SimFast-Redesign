@@ -23,8 +23,15 @@
 </head>
 <body>
 <div class="container">
+     <div class="row">
+        <div class="console-container center">
+            <button type="button" class="btn" id="console-enter">INPUT</button>
+            <input class="console" type="text" name="" id="console-input">
+            <button type="button" class="btn" id="console-show-keyboard">KEYBOARD</button>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-2 left-container">
+        <div class="col-4 left-container">
             <div class="row radar-settings">
                 <div class="airport-filters-container">
                     <h5>AIRPORT TYPE</h5>
@@ -58,7 +65,10 @@
         <div class="col-8 nomarg">
             <div class="center" id="mapid"></div>
         </div>
-        <div class="col-2 right-container">
+        
+    </div>
+   <div class="row">
+   <div class="col-6 left-container">
             <div class="row controls">
                     <span class="simulation-controls">
                             <button class="btn" onclick="location.reload()">RESTART</button>
@@ -76,7 +86,10 @@
                     <button type="button" class="btn" id="button-takeoff">Take off</button>
                 </div>
             </div>
-            <div class="flight-info">
+            
+        </div>
+          <div class="col-6 right-container">
+   <div class="flight-info">
                     <span class="callsign-info">
                         <h4>FLIGHT INFO</h4>
                     </span>
@@ -91,15 +104,10 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="console-container center">
-            <button type="button" class="btn" id="console-enter">INPUT</button>
-            <input class="console" type="text" name="" id="console-input">
-            <button type="button" class="btn" id="console-show-keyboard">KEYBOARD</button>
-        </div>
-    </div>
+            
+            </div>
+   </div>
+   
     <div class="row">
         <!-- <img id="on-screen-keyboard" class="hidden" src="./assets/Keyboard.png" alt="" style="width: 1000px; margin: auto"> -->
         <table id="on-screen-keyboard" class="hidden" style="background-color: #ccc; margin: auto; width: 100px">
