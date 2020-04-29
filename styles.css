@@ -168,7 +168,7 @@ span > p {
 
 .active-flights-container {
     background-color: #000000;
-    border: 3px solid white;
+    border: 2px solid white;
     padding: 20px;
 }
 
@@ -237,7 +237,7 @@ span > p {
     background-color: #000000;
     border: 3px solid white;
     height: 280px;
-    margin: 20px 0 0 0;
+    margin-right: 0;
     padding: 0;
     width: 80%;
 
@@ -250,7 +250,7 @@ span > p {
 .selected-info {
     background-color: transparent;
     height: 280px;
-    margin: 6px;
+    margin-right: px;
 }
 
 /* Border around airport type */
@@ -278,7 +278,7 @@ span > p {
 }
 
 #on-screen-keyboard tr td button {
-    font-weight: bold;
+    font-weight: italic;
 }
 
 .left-container {
