@@ -92,12 +92,12 @@ span > p {
 }
 
 .simulation-controls {
-    width: 100%;
+    width: 185%;
 }
 
 .simulation-controls > button {
     width: 30%;
-    margin: 10px 2px 0 0;
+    margin: 20px 2px 0 0;
     font-size: 14px;
     padding: 0;
     background-color: transparent;
@@ -134,7 +134,7 @@ span > p {
 }
 
 .flight-actions button {
-    width: 100%;
+    width: 85%;
     margin: 10px 0 0;
     padding: 0;
     background-color: transparent;
@@ -169,7 +169,7 @@ span > p {
 .active-flights-container {
     background-color: #000000;
     border: 2px solid white;
-    padding: 20px;
+    padding: 30px;
 }
 
 #selected {
@@ -238,8 +238,9 @@ span > p {
     border: 3px solid white;
     height: 280px;
     margin-right: 0;
-    padding: 0;
-    width: 80%;
+    margin-top: 10px;
+    padding: 20px;
+
 
 }
 
